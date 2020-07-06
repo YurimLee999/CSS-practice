@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1주차 주말과제</title>
+
+    <style>
+        * {margin:0; padding:0;}
+
+        #wrap {
+            width: 100%; height: 100px; line-height: 100px;
+            background-color: #3b5998;
+            padding: 0; margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+
+        }
+        #header_logo {float: left; height: 100px; line-height: 100px; margin-left: 20%}
+        #login {float: right; color: white; margin-right: 20%}
+        #login .login1 {float: left; margin: 0;}
+        #login p {line-height: 50px; margin: 0;}
+        #login input {margin: 0;}
+        #login .login2 {float: left;}
+
+        #content {
+            overflow: hidden;
+            width: 100%; background-color:#CAD9E7;
+            margin:0;
+        }
+
+        #body1 {float: left; margin-left: 15%;}
+        #body1 p {font-size: 1.8em; font-weight: bold; color: darkblue; margin-top: 30px; margin-bottom: 20px}
+
+        #body2 {float: left; margin: 30px 15% 0 200px;}
+
+        #section1 .signin1 {font-size: 3em; font-weight: bold; color: black;}
+        #section1 .signin2 {font-size: 1.8em; color: black;}
+
+        #section3 .birth {font-size: 1.2em; color: #515151; margin-top:20px;}
+        #section3 .gender {font-size: 1.2em; color: #515151; margin-top:20px;}
+
+        #section4 {margin-top: 20px;}
+        #section4 .button {
+            display: block;
+            font-size: 1.8em; font-weight: bold;
+            color: white; width: 300px; height: 40px; line-height: 40px;
+            background-color: forestgreen;
+            text-align: center; margin-bottom: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div id="wrap">
+            <div id="header_logo">
+                <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Facebook_New_Logo_%282015%29.svg/375px-Facebook_New_Logo_%282015%29.svg.png"></div>
+            </div>
+            <div id="login">
+                <div class="login1">
+                    <p>이메일 또는 휴대폰<p><br />
+                    <input type="text" name="uname" />
+                </div>
+                <div class="login2">
+                    <p>비밀번호<p><br />
+                    <input type="text" name="upw" />
+                    <div class="login">로그인</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="content">
+        <div id="body1">
+            <p>Facebook에서 전세계에 있는 친구, 가족, 지인들과<br />함께 이야기를 나눠보세요.</p>
+            <div class="pic"><img src="https://www.cs.montana.edu/paxton/145/spring2011/HamiltonWills/images/connect_map.jpg"></div>
+        </div>
+        <div id="body2">
+            <div id="section1">
+                <div class="signin1">가입하기</div>
+                <div class="signin2">빠르고 쉽습니다.</div>
+            </div>
+            <div id="section2">
+                <input type="text" name="lastname" value="" placeholder="성" size="15"/>
+                <input type="text" name="fstname" value="" placeholder="이름(성은 제외)" size="15"/><br/>
+                <input type="text" name="pnumber" value="" placeholder="휴대폰 번호 또는 이메일" size="36"/><br/>
+                <input type="text" name="newpw" value="" placeholder="새 비밀번호" size="36"/>
+            </div>
+            <div id="section3">
+                <div class="birth">생일</div> <br/>
+                <select multiple="multiple1">
+                        <option>1999년</option>
+                        <option>1998년</option>
+                        <option>1997년</option>
+                        <option>1996년</option>
+                </select>
+                <select multiple="multiple2">
+                        <option>1월</option>
+                        <option>2월</option>
+                        <option>3월</option>
+                        <option>4월</option>
+                        <option>5월</option>
+                        <option>6월</option>
+                        <option>7월</option>
+                        <option>8월</option>
+                        <option>9월</option>
+                        <option>10월</option>
+                        <option>11월</option>
+                        <option>12월</option>
+                </select>
+                <select multiple="multiple3">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                </select> <br/>
+                <div class="gender">성별</div> <br/>
+                <input type="checkbox" name="gen" value="fe" checked="checked" />여성,
+                <input type="checkbox" name="gen" value="ma" checked="checked" />남성,
+                <input type="checkbox" name="gen" value="own" checked="checked" />직접지정
+            </div>
+            <div id="section4">
+                <p>가입하기 버튼을 클릭하면 Facebook의 약관, 데이터 정책 및<br/>쿠키정책에 동의하게 됩니다. Facebook으로부터 SMS 알림을<br/> 받을 수 있으며 알림은 언제든지 옵트 아웃할 수 있습니다</p>
+                <br />
+                <div class="button">가입하기</div>
+                <p>유명인, 밴드, 비즈니스를 위한 페이지 만들기</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
